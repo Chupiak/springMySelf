@@ -8,21 +8,21 @@ public class CityConfig {
 
     @Bean
     public Electricity electricity() {
-        return new Electricity();
+        return new Electricity("Kievenergo");
     }
 
     @Bean
     public Water water() {
-        return new Water();
+        return new Water("Kievvodokanal");
     }
 
     @Bean
     public Industry industry() {
-        return new Industry();
+        return new Industry("It-industry");
     }
 
     @Bean
-    public City city(Electricity electricity, Water water, Industry industry) {
-        return new City(electricity,water,industry);
+    public City city() {
+        return new City();
     }
 }

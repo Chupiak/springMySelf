@@ -1,15 +1,18 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class City {
+
+    @Autowired
     private Electricity electricity;
+
+    @Autowired
     private Water water;
+
+    @Autowired
     private Industry industry;
 
-    public City(Electricity electricity, Water water, Industry industry) {
-        this.electricity = electricity;
-        this.water = water;
-        this.industry = industry;
-    }
 
     @Override
     public String toString() {
